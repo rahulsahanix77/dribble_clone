@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Mono sans extralight";
+    src: url(./asset/Mons\ sans\ extralight.woff2);
+    font-family: "source serif 4 regular";
+    src:url(./asset/source\ serif\ 4.woff2);
+}
+*{ margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width:100%;
+font: 10px;
+}
+#navbar{height: fit-content;
+    width: fit-content;
+    padding: 2.2vw 0 2vw 3vw;
+    display: flex;
+align-items: center;
+gap: 3vw;}
+#navbar a{
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: "source serif 4 regular";
+    font-weight: 550;
+    color:black   ;
+}
+#textcontainer{padding-top: 6vw;
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    text-align: center;
+}
+.class1{
+    /* background-color: aqua; */
+    margin: 0 auto;
+    height: max-content;
+    width: max-content;
+    border-radius: 999px;    
+background-color: #d7c7ee;
+padding: 1vw;
+margin-bottom: 2.8vw;}
+    .class1 h5{
+        font-size: 1.2vw;
+        /* background-color: aqua; */
+font-family: "source serif 4 regular";
+font-weight: 400;
+    }
+    .class2 h1{
+        font-family: "source serif 4 regular";
+        font-size: 5.5vw;
+        margin: 0 auto;
+    font-weight: 500;
+    line-height: 5.5vw;
+}
+.class3 h3{
+    font-family: "source serif 4 regular";
+    font-size: 1.6vw;
+    margin: 0 auto;
+font-weight: 550;
+line-height: 5.5vw;
+}
+.class4{
+    border-radius: 99px;
+    width: max-content;
+    height: max-content;
+    padding: 1vw;
+    margin: 0 auto;
+    background-color: black;
+margin-top: 1vw;
+padding: 1.5vw;}
+.class4 h5{
+    color:#ffffff;
+    font-size: 1.2vw;
+    font-family: "mono sans extraLight";
+    font-weight: 400;
+}

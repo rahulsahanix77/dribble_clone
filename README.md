@@ -1,1 +1,1 @@
-Creatinga a clone of dribble website using html5 , css , javascipt.
+Creating a clone of dribble website using html5 , css , javascipt.

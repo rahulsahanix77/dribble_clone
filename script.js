@@ -1,7 +1,7 @@
 function scrollImage()
 {
     document.addEventListener('DOMContentLoaded', () => {
-        const wrapper = document.querySelector('.scroll-wrapper');
+        const wrapper = document.querySelector('div[data-page="scroll-wrapper"]');
         const imageWrappers = Array.from(wrapper.children);
     
         // Clone image wrappers and append them for seamless scrolling

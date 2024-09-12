@@ -160,14 +160,14 @@ background-color: #F8F7F4;
     width: 50vh;
     padding: 1vw;
   }
-  .scroll-wrapper video , img {
+  .image-wrapper video , img {
     display: block;
     width: 100%; 
     height: 100%;
     object-fit: cover;
     object-position: top;
     border-radius: 40px;
-  }
+   }
   @keyframes scroll {
     0% {
       transform: translateX(0);
@@ -180,15 +180,70 @@ background-color: #F8F7F4;
     height: max-content;
     width: 100%;
 }
-.text{height: fit-content;
+.page2text1{height: fit-content;
     width: 100%;    
     text-align: center;
-    margin: 1vw;
+    margin-top: 5vw;
 }
-.text h2{
+.page2text1 h1{
     font-size: 3.5vw;
-    font-family:sans-serif ;
-    font-weight: 200;
+    font-family: "Mona Sans";
+    font-weight: 600; 
 }
+.showcase{
+    height: 100%;
+    width: 100%;
+    padding: 4vw;
+    display:grid;
+    grid-template-columns: repeat(4 , 1fr);
+}
+.page2image { 
+    position: relative;
+    height: 35vh;
+    width: 40vh;
+    margin:1vw;
+    border-radius: 10px;
+    
+}
+.page2image img{
+    height:85%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  
+}
+.overflow{
+    position: absolute;
+    color: white;
+    bottom: 25%;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    justify-content: space-between;
+    align-items:center ;
+    transition: all ease 0.5s
+}
+.page2image:hover .overflow{
+    opacity: 1;
+    visibility: visible;
 
-
+}
+.overflowtext{
+    left: 0;
+}
+.icon{position: absolute; 
+  right: 5%;
+}
+.overflowtext h5{
+    font-size: 16px;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+.icon i{margin-right: 0.5vw;
+    border-radius: 50%;
+    background-color: white;
+    padding: 1vw;
+    color: #0D0C22;
+}

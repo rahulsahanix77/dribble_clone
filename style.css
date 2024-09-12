@@ -12,45 +12,105 @@ html,body{
 height: 100%;
 width:100%;
 font: 10px;
+background-color: #F8F7F4;
+-webkit-user-select: none;
 }
-#navbar{height: fit-content;
-    width: fit-content;
-    padding: 2.2vw 0 2vw 3vw;
+#navbar{
+    height: fit-content;
+    width: 100%;
     display: flex;
-align-items: center;
-gap: 3vw;}
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.9vw 3vw 2.5vw 3vw;
+}
+.banner svg{margin-right: 2vw;}
+    .banner{
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+    }
+    .banner a{
+        display: flex;
+        align-items: center;
+    }
+    .banner a:nth-child(2) i {
+        font-size: 2vw;}
+
 #navbar a{
     text-decoration: none;
     font-size: 1vw;
-    font-family: "source serif 4 regular";
+    font-family: sans-serif;
     font-weight: 550;
-    color:black   ;
+    color:#0D0C22;
 }
-#textcontainer{padding-top: 6vw;
-    height: 100%;
+.right{
+ 
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+.search{
+    border-radius: 99px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 1vw 1.5vw ;
+    margin-right: 2vw;
+    display: flex;
+    gap: 0.5v
+}
+.search input{
+    border:none;
+    outline: none;
+}
+.search:hover , :active{
+    border-color: #be94bba2;
+    transition-timing-function: ease;
+   transition-duration:0.5s ;
+}
+.auth{
+    display: inline-block;
+    text-align: center;
+    justify-content: center}
+#navbar .auth a:nth-child(2){
+    border-radius: 99px;
+    padding: 1vw 2vw;
+    margin-left: 2vw;
+    background-color: black;
+    color:#ffffff;
+}
+
+#navbar a:hover{
+    color: #4b4b4dd0;
+}
+#navbar .auth a:nth-child(2):hover{
+    background-color: #252525d3;
+}
+#textcontainer{
+    padding: 6vw 0 3vw 0 ;
+    height: max-content;
     width: 100%;
-    /* background-color: blue; */
     text-align: center;
 }
 .class1{
-    /* background-color: aqua; */
     margin: 0 auto;
-    height: max-content;
+    height: min-content;
     width: max-content;
-    border-radius: 999px;    
-background-color: #d7c7ee;
-padding: 1vw;
-margin-bottom: 2.8vw;}
-    .class1 h5{
-        font-size: 1.2vw;
-        /* background-color: aqua; */
-font-family: "source serif 4 regular";
-font-weight: 400;
+    border-radius: 999px; 
+    padding: 0.5vw 1.5vw;  
+    background-color: rgb(239,177,235);
+    margin-bottom: 2.8vw;}
+    
+.class1 h5{
+    font-size: 1.2vw;
+    font-family: "source serif 4 regular";
+    font-weight: 400;
     }
-    .class2 h1{
-        font-family: "source serif 4 regular";
-        font-size: 5.5vw;
-        margin: 0 auto;
+    .class2 h1{   
+    font-family: "source serif 4 regular";        
+    font-size: 5.5vw;
+    margin: 0 auto;
     font-weight: 500;
     line-height: 5.5vw;
 }
@@ -58,21 +118,77 @@ font-weight: 400;
     font-family: "source serif 4 regular";
     font-size: 1.6vw;
     margin: 0 auto;
-font-weight: 550;
-line-height: 5.5vw;
+    font-weight: 550;
+    line-height: 5.5vw;
 }
 .class4{
     border-radius: 99px;
     width: max-content;
     height: max-content;
-    padding: 1vw;
-    margin: 0 auto;
+    margin: auto;
+    padding: 1.5vw 2vw ;
+    margin-top: 1vw;
     background-color: black;
-margin-top: 1vw;
-padding: 1.5vw;}
+    
+}
 .class4 h5{
     color:#ffffff;
     font-size: 1.2vw;
     font-family: "mono sans extraLight";
     font-weight: 400;
 }
+#textcontainer .class4:hover{
+    background-color: #252525d3;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.scroll-container{
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+  }
+  .scroll-wrapper{
+    display: flex;
+    will-change: transform;
+    white-space: nowrap;
+    animation: scroll linear infinite;
+  }
+  .image-wrapper  {
+    flex-shrink: 0;
+    height: 60vh;
+    width: 50vh;
+    padding: 1vw;
+  }
+  .scroll-wrapper video , img {
+    display: block;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 40px;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-290%);
+    }
+  }
+#page2{
+    height: max-content;
+    width: 100%;
+}
+.text{height: fit-content;
+    width: 100%;    
+    text-align: center;
+    margin: 1vw;
+}
+.text h2{
+    font-size: 3.5vw;
+    font-family:sans-serif ;
+    font-weight: 200;
+}
+
+
